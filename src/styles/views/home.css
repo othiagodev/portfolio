@@ -1,11 +1,45 @@
-div#home {
-  height: 100vh;
+div#home > .header {
+  height: 60px;
+  background-color: #FAFAFA;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+div#home > .header > .social-network li {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+}
+
+div#home > .header > .social-network a {
+  height: 45px;
+  width: 45px;
+  border-radius: 22.5px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-div#home > h1 {
-  font-size: 3.5rem;
-  font-weight: 400;
+div#home > .header > .social-network a.github {
+  background-color: #171515;
+}
+
+div#home > .header > .social-network a.linkedin {
+  background-color: #0E76A8;
+}
+
+div#home > .red {
+  height: 100vh;
+  background-color: rgb(255, 0, 0, 0.7);
+}
+
+div#home > .green {
+  height: 100vh;
+  background-color: rgb(0, 255, 0, 0.7);
+}
+
+div#home > .blue {
+  height: 100vh;
+  background-color: rgb(0, 0, 255, 0.7);
 }
