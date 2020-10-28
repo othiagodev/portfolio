@@ -24,6 +24,7 @@
     "no-use-before-define": "off",
     "import/extensions": "off",
     "arrow-body-style": "off",
+    "object-curly-newline": "off",
     "@typescript-eslint/no-use-before-define": ["error"]
   },
   "settings": {

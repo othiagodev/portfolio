@@ -1,3 +1,37 @@
+:root {
+  --bg: #FAFAFA;
+  --bg-header: #FFF;
+  --text-color: #010101;
+  --social-network-color: #808080;
+  --social-network-color-github: #211F1F;
+  --social-network-color-linkedin: #0E76A8;
+  --social-network-color-mail: #BB001B;
+  --gradient-header: linear-gradient(
+    to right,
+    rgba(120, 120, 120, 0),
+    rgba(120, 120, 120, 0),
+    rgba(120, 120, 120, 0.75)
+  );
+  --header-shadow: rgba(0, 0, 0, 0.05);
+}
+
+.dark-mode:root {
+  --bg: #181818;
+  --bg-header: #202020;
+  --text-color: #FFFFFF;
+  --social-network-color: #909090;
+  --social-network-color-github: #EEEEEE;
+  --social-network-color-linkedin: #0E76A8;
+  --social-network-color-mail: #BB001B;
+  --gradient-header: linear-gradient(
+    to right,
+    rgba(170, 170, 170, 0),
+    rgba(170, 170, 170, 0),
+    rgba(170, 170, 170, 0.75)
+  );
+  --header-shadow: rgba(0, 0, 0, 0.05);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -5,8 +39,8 @@
 }
 
 body {
-  color: #010101;
-  background-color: #FAFAFA;
+  color: var(--text-color);
+  background-color: var(--bg);
 }
 
 body, input, textarea, button {
