@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import '../styles/views/home.css';
-import { FaGithub, FaLinkedinIn, FaMoon, FaSun } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 import ReactSwitch from 'react-switch';
 import usePersistedState from '../utils/usePersistedState';
@@ -10,6 +10,12 @@ export default function Home() {
   function setTheme() {
     const root = document.querySelector('html');
     root?.classList.toggle('dark-mode');
+  }
+
+  function iconSwitch(label: string, emoji: string) {
+    return (
+      <span style={{ fontSize: 19 }} role="img" aria-label={label}>{emoji}</span>
+    );
   }
 
   function switchTheme() {
@@ -30,12 +36,11 @@ export default function Home() {
               className="switch"
               onChange={switchTheme}
               checked={switchState}
-              onColor="#808080"
-              offColor="#909090"
-              checkedIcon={<FaMoon size={28} />}
-              uncheckedIcon={<FaSun size={28} />}
+              onColor="#2D2D2D"
+              offColor="#EBEBEB"
+              checkedIcon={iconSwitch('moon', '🌜')}
+              uncheckedIcon={iconSwitch('sun', '🌞')}
             />
-            <span>Dark Mode</span>
           </div>
           <nav className="social-network">
             <ul>
