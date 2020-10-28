@@ -1,6 +1,6 @@
 :root {
   --bg: #FAFAFA;
-  --bg-header: #FFF;
+  --bg-header: #FFFFFF;
   --text-color: #010101;
   --social-network-color: #808080;
   --social-network-color-github: #211F1F;
@@ -8,11 +8,11 @@
   --social-network-color-mail: #BB001B;
   --gradient-header: linear-gradient(
     to right,
-    rgba(120, 120, 120, 0),
-    rgba(120, 120, 120, 0),
-    rgba(120, 120, 120, 0.75)
+    #78787800,
+    #78787800,
+    #787878BF
   );
-  --header-shadow: rgba(0, 0, 0, 0.05);
+  --header-shadow: #0000000D;
 }
 
 .dark-mode:root {
@@ -25,11 +25,11 @@
   --social-network-color-mail: #BB001B;
   --gradient-header: linear-gradient(
     to right,
-    rgba(170, 170, 170, 0),
-    rgba(170, 170, 170, 0),
-    rgba(170, 170, 170, 0.75)
+    #AAAAAA00,
+    #AAAAAA00,
+    #AAAAAABF
   );
-  --header-shadow: rgba(0, 0, 0, 0.05);
+  --header-shadow: #0000000D;
 }
 
 * {
