@@ -22,8 +22,14 @@ div#home .header section.header-top .switch {
   margin-right: 0.6rem;
 }
 
-div#home .header section.header-top .switch .react-switch-bg {
-  background: red;
+div#home .header section.header-top .switch .react-switch-bg div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div#home .header section.header-top .switch .react-switch-bg span {
+  font-size: 1.4rem;
 }
 
 div#home .header section.header-top .social-network li {

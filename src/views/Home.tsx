@@ -7,25 +7,16 @@ import usePersistedState from '../utils/usePersistedState';
 
 export default function Home() {
   const [switchState, setSwitchState] = usePersistedState<boolean>('theme', false);
-  function setTheme() {
-    const root = document.querySelector('html');
-    root?.classList.toggle('dark-mode');
-  }
 
-  function iconSwitch(label: string, emoji: string) {
-    return (
-      <span style={{ fontSize: 19 }} role="img" aria-label={label}>{emoji}</span>
-    );
-  }
-
-  function switchTheme() {
-    setTheme();
-    setSwitchState(!switchState);
+  function setTheme(selectors: string, className: string) {
+    const root = document.querySelector(selectors);
+    if (switchState) root?.classList.add(className);
+    else root?.classList.remove(className);
   }
 
   useEffect(() => {
-    if (switchState) setTheme();
-  }, []);
+    setTheme('html', 'dark-mode');
+  }, [switchState]);
 
   return (
     <div id="home">
@@ -34,12 +25,12 @@ export default function Home() {
           <div className="switch-container">
             <ReactSwitch
               className="switch"
-              onChange={switchTheme}
+              onChange={() => setSwitchState(!switchState)}
               checked={switchState}
               onColor="#2D2D2D"
               offColor="#EBEBEB"
-              checkedIcon={iconSwitch('moon', '🌜')}
-              uncheckedIcon={iconSwitch('sun', '🌞')}
+              checkedIcon={<span role="img" aria-label="moon">🌜</span>}
+              uncheckedIcon={<span role="img" aria-label="sun">🌞</span>}
             />
           </div>
           <nav className="social-network">
