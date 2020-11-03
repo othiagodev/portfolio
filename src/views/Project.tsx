@@ -1,11 +1,11 @@
 import React from 'react';
 import Header from '../components/Header';
-import '../styles/views/home.css';
+import '../styles/views/project.css';
 
-export default function Home() {
+export default function Project() {
   return (
-    <div id="home">
-      <Header linkSelected={0} />
+    <div id="project">
+      <Header linkSelected={1} />
       <div className="content" />
     </div>
   );

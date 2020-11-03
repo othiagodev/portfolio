@@ -13,6 +13,7 @@
     #787878BF
   );
   --header-shadow: #0000000D;
+  --link-selected-color: #145CAD;
 }
 
 .dark-mode:root {
@@ -30,6 +31,7 @@
     #AAAAAABF
   );
   --header-shadow: #0000000D;
+  --link-selected-color: #0e6892;
 }
 
 * {
@@ -41,6 +43,7 @@
 body {
   color: var(--text-color);
   background-color: var(--bg);
+  transition: background-color 0.2s linear;
 }
 
 body, input, textarea, button {
