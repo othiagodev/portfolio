@@ -58,9 +58,13 @@ export default function Header({ linkSelected }:Props) {
               <a className="social-network-link github" target="_blank" rel="noreferrer" href="https://github.com/othiagodev">
                 <FaGithub />
               </a>
+            </li>
+            <li>
               <a className="social-network-link linkedin" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/othiagodev/">
                 <FaLinkedinIn />
               </a>
+            </li>
+            <li>
               <a className="social-network-link mail" href="mailto:thg.santos@outlook.com">
                 <FiMail />
               </a>
