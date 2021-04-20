@@ -14,6 +14,8 @@
   );
   --header-shadow: #0000000D;
   --link-selected-color: #145CAD;
+  --scrollbar-bg-thumb: #787878BF;
+  --scrollbar-bg-thumb-hover: #525252bf;
 }
 
 .dark-mode:root {
@@ -32,6 +34,8 @@
   );
   --header-shadow: #0000000D;
   --link-selected-color: #0e6892;
+  --scrollbar-bg-thumb: #AAAAAABF;
+  --scrollbar-bg-thumb-hover: #cacacabf;
 }
 
 * {
@@ -48,4 +52,20 @@ body {
 
 body, input, textarea, button {
   font: 600 1rem Nunito, sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-bg-thumb);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--scrollbar-bg-thumb-hover);
 }

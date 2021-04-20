@@ -19,7 +19,7 @@ export default function Header({ linkSelected }:Props) {
     else root?.classList.remove(className);
   }
 
-  function setLinkSelecte(number: number) {
+  function setLinkSelected(number: number) {
     const className = 'selected';
     const element = document.querySelectorAll('.router-link a');
 
@@ -31,7 +31,7 @@ export default function Header({ linkSelected }:Props) {
   }
 
   useEffect(() => {
-    setLinkSelecte(linkSelected);
+    setLinkSelected(linkSelected);
   });
 
   useEffect(() => {
@@ -48,6 +48,9 @@ export default function Header({ linkSelected }:Props) {
             checked={switchState}
             onColor="#2D2D2D"
             offColor="#EBEBEB"
+            onHandleColor="#202020"
+            offHandleColor="#FAFAFA"
+            activeBoxShadow="none"
             checkedIcon={<span role="img" aria-label="moon">🌜</span>}
             uncheckedIcon={<span role="img" aria-label="sun">🌞</span>}
           />
