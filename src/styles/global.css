@@ -15,7 +15,9 @@
   --header-shadow: #0000000D;
   --link-selected-color: #145CAD;
   --scrollbar-bg-thumb: #787878BF;
-  --scrollbar-bg-thumb-hover: #525252bf;
+  --scrollbar-bg-thumb-hover: #525252BF;
+  --hover-button: #F9F9F9;
+  --active-button: #EBEBEB;
 }
 
 .dark-mode:root {
@@ -36,6 +38,8 @@
   --link-selected-color: #0e6892;
   --scrollbar-bg-thumb: #AAAAAABF;
   --scrollbar-bg-thumb-hover: #cacacabf;
+  --hover-button: #242424;
+  --active-button: #363636;
 }
 
 * {

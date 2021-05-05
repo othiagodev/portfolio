@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
+import { AiOutlineMenu } from 'react-icons/ai';
 import { FiMail } from 'react-icons/fi';
 import ReactSwitch from 'react-switch';
 import usePersistedState from '../utils/usePersistedState';
@@ -54,6 +55,11 @@ export default function Header({ linkSelected }: Props) {
             checkedIcon={<span role="img" aria-label="moon">🌜</span>}
             uncheckedIcon={<span role="img" aria-label="sun">🌞</span>}
           />
+        </div>
+        <div className="menu-container">
+          <button type="button">
+            <AiOutlineMenu />
+          </button>
         </div>
       </section>
       <section className="header-center">
