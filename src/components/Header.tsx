@@ -10,7 +10,7 @@ type Props = {
   linkSelected: number
 }
 
-export default function Header({ linkSelected }:Props) {
+export default function Header({ linkSelected }: Props) {
   const [switchState, setSwitchState] = usePersistedState<boolean>('theme', true);
 
   function setTheme(selectors: string, className: string) {
@@ -40,7 +40,7 @@ export default function Header({ linkSelected }:Props) {
 
   return (
     <header id="header">
-      <section className="header-top">
+      <section className="header-left">
         <div className="switch-container">
           <ReactSwitch
             className="switch"
@@ -55,28 +55,8 @@ export default function Header({ linkSelected }:Props) {
             uncheckedIcon={<span role="img" aria-label="sun">🌞</span>}
           />
         </div>
-        <nav className="social-network">
-          <ul>
-            <li>
-              <a className="social-network-link github" target="_blank" rel="noreferrer" href="https://github.com/othiagodev">
-                <FaGithub />
-              </a>
-            </li>
-            <li>
-              <a className="social-network-link linkedin" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/othiagodev/">
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li>
-              <a className="social-network-link mail" href="mailto:thg.santos@outlook.com">
-                <FiMail />
-              </a>
-            </li>
-          </ul>
-        </nav>
       </section>
-      <hr />
-      <section className="header-bottom">
+      <section className="header-center">
         <nav className="router-link">
           <ul>
             <li>
@@ -94,6 +74,27 @@ export default function Header({ linkSelected }:Props) {
                   <div className="link-selected" />
                 </div>
               </Link>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section className="header-right">
+        <nav className="social-network">
+          <ul>
+            <li>
+              <a className="social-network-link github" target="_blank" rel="noreferrer" href="https://github.com/othiagodev">
+                <FaGithub />
+              </a>
+            </li>
+            <li>
+              <a className="social-network-link linkedin" target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/othiagodev/">
+                <FaLinkedinIn />
+              </a>
+            </li>
+            <li>
+              <a className="social-network-link mail" href="mailto:thg.santos@outlook.com">
+                <FiMail />
+              </a>
             </li>
           </ul>
         </nav>
