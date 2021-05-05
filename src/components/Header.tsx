@@ -57,7 +57,7 @@ export default function Header({ linkSelected }: Props) {
           />
         </div>
         <div className="menu-container">
-          <button type="button">
+          <button type="button" onClick={alert}>
             <AiOutlineMenu />
           </button>
         </div>
