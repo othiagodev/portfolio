@@ -31,38 +31,6 @@
 
 #header .menu-container {
   display: none;
-  padding-left: 1.25rem;
-}
-
-#header .menu-container button:hover:active {
-  background: var(--active-button);
-}
-
-#header .menu-container button:hover {
-  background: var(--hover-button);
-}
-
-#header .menu-container button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: none;
-  width: 2.5rem;
-  height: 2.5rem;
-  border-radius: 1.25rem;
-	color: inherit;
-	border: none;
-	padding: 0;
-	font: inherit;
-	cursor: pointer;
-	outline: inherit;
-}
-
-#header .menu-container button svg {
-  height: 1.5rem;
-  width: 1.5rem;
-  color: var(--text-color);
-  transition: color 0.2s linear;
 }
 
 #header section.header-center {
@@ -197,11 +165,3 @@
     display: unset;
   }
 }
-
-@media (max-width: 640px) {
-
-  #header .menu-container {
-    padding-left: 0.75rem;
-  }
-}
-

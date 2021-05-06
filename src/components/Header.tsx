@@ -1,10 +1,10 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
-import { AiOutlineMenu } from 'react-icons/ai';
 import { FiMail } from 'react-icons/fi';
 import ReactSwitch from 'react-switch';
 import usePersistedState from '../utils/usePersistedState';
+import { NavigationButton } from './NavigationDrawer';
 import '../styles/components/header.css';
 
 type Props = {
@@ -57,16 +57,14 @@ export default function Header({ linkSelected }: Props) {
           />
         </div>
         <div className="menu-container">
-          <button type="button" onClick={alert}>
-            <AiOutlineMenu />
-          </button>
+          <NavigationButton />
         </div>
       </section>
       <section className="header-center">
         <nav className="router-link">
           <ul>
             <li>
-              <Link to="/">
+              <Link to="/h">
                 <div className="link-content">
                   <span>Início</span>
                   <div className="link-selected" />
@@ -74,7 +72,7 @@ export default function Header({ linkSelected }: Props) {
               </Link>
             </li>
             <li>
-              <Link to="/projetos">
+              <Link to="/p">
                 <div className="link-content">
                   <span>Projetos</span>
                   <div className="link-selected" />

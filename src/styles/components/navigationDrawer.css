@@ -1,0 +1,81 @@
+#navigation {
+  display: none;
+  height: 100%;
+}
+
+#navigation .nav-container .nav-content {
+  display: flex;
+  width: 74%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: var(--link-selected-color);
+  z-index: 100;
+}
+
+#navigation .nav-container .nav-close button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.1);
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 26%;
+  height: 100%;
+  z-index: 100;
+}
+
+#navigation.isOnScreen {
+  display: unset;
+}
+
+#navBtn.nav-container {
+  display: flex;
+  padding-left: 1.25rem;
+}
+
+#navBtn.nav-container button:hover:active {
+  background: var(--active-button);
+}
+
+#navBtn.nav-container button:hover {
+  background: var(--hover-button);
+}
+
+#navBtn.nav-container button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: none;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 1.25rem;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+}
+
+#navBtn.nav-container button svg {
+  height: 1.5rem;
+  width: 1.5rem;
+  color: var(--text-color);
+  transition: color 0.2s linear;
+}
+
+@media (max-width: 640px) {
+
+  #navBtn.nav-container {
+    padding-left: 0.75rem;
+  }
+}
