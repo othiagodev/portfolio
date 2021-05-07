@@ -1,24 +1,62 @@
-#navigation {
-  display: none;
-  height: 100%;
-}
-
 #navigation .nav-container .nav-content {
-  display: flex;
   width: 74%;
+  height: 100%;
+  max-width: 19rem;
   position: fixed;
   top: 0;
   left: 0;
-  height: 100%;
-  background: var(--link-selected-color);
+  transform: translateX(-100%);
+  transition: transform 0.3s cubic-bezier(0.64, 0, 0.78, 0);;
+
   z-index: 100;
 }
 
+#navigation .nav-container.isOnScreen .nav-content {
+  transform: none;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+  transition-delay: 0.15s;
+}
+
+#navigation .nav-container .content-view {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background: var(--nav-bg);
+  transition: background 0.2s linear;
+}
+
+#navigation .nav-container .nav-ornament {
+  width: 73.5%;
+  height: 100%;
+  max-width: 18.75rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transform: translateX(-100.5%);
+  transition: transform 0.3s cubic-bezier(0.64, 0, 0.78, 0);
+  transition-delay: 0.15s;
+  z-index: 99;
+}
+
+#navigation .nav-container.isOnScreen .nav-ornament {
+  transform: none;
+  transition: transform 0.3s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+#navigation .nav-container .ornament-view {
+  height: 100%;
+  width: 100%;
+  background: var(--link-selected-color);
+  box-shadow: 0.3rem 0rem 0.3rem var(--header-shadow);
+  transition: background 0.2s linear;
+}
+
+/* -------------------------------------------------------- */
 #navigation .nav-container .nav-close button {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0);
 	color: inherit;
 	border: none;
 	padding: 0;
@@ -28,13 +66,14 @@
   position: fixed;
   top: 0;
   right: 0;
-  width: 26%;
+  width: 100%;
   height: 100%;
-  z-index: 100;
+  z-index: 50;
+  transform: translateX(-100%);
 }
 
-#navigation.isOnScreen {
-  display: unset;
+#navigation .nav-container.isOnScreen .nav-close button {
+  transform: none;
 }
 
 #navBtn.nav-container {
@@ -74,7 +113,6 @@
 }
 
 @media (max-width: 640px) {
-
   #navBtn.nav-container {
     padding-left: 0.75rem;
   }

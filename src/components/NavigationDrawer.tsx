@@ -6,7 +6,7 @@ let isOn = false;
 
 function OpenCloseNavDrawer() {
   const className = 'isOnScreen';
-  const root = document.querySelector('#navigation');
+  const root = document.querySelector('#navigation > div.nav-container');
 
   isOn = !isOn;
   if (isOn) root?.classList.add(className);
@@ -17,7 +17,12 @@ export default function NavigationDrawer() {
   return (
     <div id="navigation">
       <div className="nav-container">
-        <div className="nav-content"> </div>
+        <div className="nav-content">
+          <div className="content-view"><div>nav</div></div>
+        </div>
+        <div className="nav-ornament">
+          <div className="ornament-view" />
+        </div>
         <div className="nav-close">
           <button type="button" onClick={OpenCloseNavDrawer}> </button>
         </div>
