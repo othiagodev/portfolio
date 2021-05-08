@@ -9,8 +9,8 @@
   --gradient-header: linear-gradient(
     to right,
     #78787800,
-    #78787800,
-    #787878BF
+    #787878BF,
+    #78787800
   );
   --header-shadow: #0003;
   --link-selected-color: #145CAD;
@@ -32,8 +32,8 @@
   --gradient-header: linear-gradient(
     to right,
     #AAAAAA00,
-    #AAAAAA00,
-    #AAAAAABF
+    #AAAAAABF,
+    #AAAAAA00
   );
   --header-shadow: #0000000D;
   --link-selected-color: #0e6892;

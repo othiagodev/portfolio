@@ -52,6 +52,25 @@
   transition: background 0.2s linear;
 }
 
+#navigation .nav-content .switch-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+#navigation .nav-content .switch-content p {
+  margin-left: 0.4rem;
+  transition: color 0.2s linear;
+}
+
+#navigation .nav-content hr {
+  border: none;
+  height: 0.06rem;
+  background-image: var(--gradient-header);
+}
+
 #navigation .nav-content li {
   list-style-type: none;
 }

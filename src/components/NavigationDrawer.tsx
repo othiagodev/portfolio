@@ -3,6 +3,7 @@ import { AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 import '../styles/components/navigationDrawer.css';
+import NightModeSwitch from './NightModeSwitch';
 
 let isOn = false;
 
@@ -21,7 +22,10 @@ export default function NavigationDrawer() {
       <div className="nav-container">
         <div className="nav-content">
           <div className="content-view">
-            <div>switch</div>
+            <div className="switch-content">
+              <NightModeSwitch />
+              <p>Modo Noturno</p>
+            </div>
             <hr />
             <div>
               <ul>
