@@ -15,20 +15,6 @@
   width: 20%;
 }
 
-#header .switch {
-  margin-left: 1.25rem;
-}
-
-#header .switch .react-switch-bg div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#header .switch .react-switch-bg span {
-  font-size: 1.4rem;
-}
-
 #header .menu-container {
   display: none;
 }
