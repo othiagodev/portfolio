@@ -1,0 +1,13 @@
+#dark-mode-switch .switch {
+  margin-left: 1.25rem;
+}
+
+#dark-mode-switch .switch .react-switch-bg div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#dark-mode-switch .switch .react-switch-bg span {
+  font-size: 1.4rem;
+}
