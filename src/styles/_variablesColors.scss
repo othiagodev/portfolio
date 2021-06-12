@@ -1,0 +1,40 @@
+:root {
+  --bg: #fafafa;
+  --bg-header: #ffffff;
+  --text-color: #010101;
+  --social-network-color: #808080;
+  --social-network-color-github: #211f1f;
+  --social-network-color-linkedin: #0e76a8;
+  --social-network-color-mail: #bb001b;
+  --gradient-header: linear-gradient(to right, #78787800, #787878bf, #78787800);
+  --header-shadow: #0003;
+  --link-selected-color: #145cad;
+  --scrollbar-bg-thumb: #787878bf;
+  --scrollbar-bg-thumb-hover: #525252bf;
+  --hover-button: #f9f9f9;
+  --active-button: #ebebeb;
+  --nav-bg: #f6f6f6;
+
+  &.dark-mode {
+    --bg: #181818;
+    --bg-header: #202020;
+    --text-color: #ffffff;
+    --social-network-color: #909090;
+    --social-network-color-github: #eeeeee;
+    --social-network-color-linkedin: #0e76a8;
+    --social-network-color-mail: #bb001b;
+    --gradient-header: linear-gradient(
+      to right,
+      #aaaaaa00,
+      #aaaaaabf,
+      #aaaaaa00
+    );
+    --header-shadow: #0000000d;
+    --link-selected-color: #0e6892;
+    --scrollbar-bg-thumb: #aaaaaabf;
+    --scrollbar-bg-thumb-hover: #cacacabf;
+    --hover-button: #242424;
+    --active-button: #363636;
+    --nav-bg: #1b1b1b;
+  }
+}

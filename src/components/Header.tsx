@@ -4,7 +4,6 @@ import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
 import { NavigationButton } from './NavigationDrawer';
 import NightModeSwitch from './NightModeSwitch';
-import '../styles/components/header.css';
 
 type Props = {
   linkSelected: number

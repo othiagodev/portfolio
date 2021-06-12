@@ -1,0 +1,39 @@
+@use 'variablesColors';
+@use 'views/home';
+@use 'views/project';
+@use 'components/header';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  color: var(--text-color);
+  background-color: var(--bg);
+  transition: background-color 0.2s linear;
+
+  &,
+  input,
+  textarea,
+  button {
+    font: 600 1rem Nunito, sans-serif;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--scrollbar-bg-thumb);
+
+  &:hover {
+    background: var(--scrollbar-bg-thumb-hover);
+  }
+}
