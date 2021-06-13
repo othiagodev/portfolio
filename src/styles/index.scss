@@ -2,23 +2,25 @@
 @use 'views/home';
 @use 'views/project';
 @use 'components/header';
+@use 'components/nightModeSwitch';
+@use 'components/navigationDrawer';
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
 
-body {
-  color: var(--text-color);
-  background-color: var(--bg);
-  transition: background-color 0.2s linear;
+  body {
+    color: var(--text-color);
+    background-color: var(--bg);
+    transition: background-color 0.2s linear;
 
-  &,
-  input,
-  textarea,
-  button {
-    font: 600 1rem Nunito, sans-serif;
+    &,
+    input,
+    textarea,
+    button {
+      font: 600 1rem Nunito, sans-serif;
+    }
   }
 }
 

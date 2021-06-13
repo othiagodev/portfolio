@@ -1,9 +1,0 @@
-#dark-mode-switch .switch .react-switch-bg div {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#dark-mode-switch .switch .react-switch-bg span {
-  font-size: 1.4rem;
-}

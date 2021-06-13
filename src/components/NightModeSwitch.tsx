@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import ReactSwitch from 'react-switch';
 import usePersistedState from '../utils/usePersistedState';
-import '../styles/components/nightModeSwitch.css';
 
 export default function NightModeSwitch() {
   const [switchState, setSwitchState] = usePersistedState<boolean>('theme', true);

@@ -1,0 +1,15 @@
+#dark-mode-switch {
+  .switch {
+    .react-switch-bg {
+      div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      span {
+        font-size: 1.4rem;
+      }
+    }
+  }
+}

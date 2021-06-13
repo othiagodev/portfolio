@@ -2,7 +2,6 @@ import React from 'react';
 import { AiOutlineMenu } from 'react-icons/ai';
 import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 import { FiMail } from 'react-icons/fi';
-import '../styles/components/navigationDrawer.css';
 import NightModeSwitch from './NightModeSwitch';
 
 let isOn = false;
