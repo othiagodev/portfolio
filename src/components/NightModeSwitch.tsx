@@ -32,3 +32,13 @@ export default function NightModeSwitch() {
     </div>
   );
 }
+
+function loadTheme(selectors: string, className: string) {
+  const [switchState] = usePersistedState<boolean>('theme', true);
+
+  const root = document.querySelector(selectors);
+  if (switchState) root?.classList.add(className);
+  else root?.classList.remove(className);
+}
+
+export { loadTheme };

@@ -14,6 +14,7 @@
   --hover-button: #f9f9f9;
   --active-button: #ebebeb;
   --nav-bg: #f6f6f6;
+  --error: #bb0000;
 
   &.dark-mode {
     --bg: #181818;
@@ -36,5 +37,6 @@
     --hover-button: #242424;
     --active-button: #363636;
     --nav-bg: #1b1b1b;
+    --error: #8b0000;
   }
 }
